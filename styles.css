@@ -1,11 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
     height: 100dvh;
     width: 100dvw;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
 }
@@ -13,28 +14,125 @@
 .title-screen{
     height: 100dvh;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
 }
 
 .login-container{
-    background-color: bisque;
+    background-color: rgb(241, 241, 241);
     border-top-left-radius: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-bottom-left-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height: 100dvh;
     width: 50%;
 }
 
 .login-box{
-    height: 500px;
+    position: relative;
+    height: 450px;
     width: 400px;
     border-radius: 50px;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .login-box .top-section{
     padding: 20px;
     text-align: center;
 }
+
+.fields-container{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fields{
+    display: flex;
+    text-align: left;
+    column-gap: 2px;
+    flex-direction: column;
+}
+
+
+.fields input[type=text],input[type=password]{
+    width: 300px;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  .button-container{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;    
+}
+
+.register {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-sizing: border-box;
+  color: rgb(0, 140, 255);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  width: auto;
+}
+
+.register:hover{
+  border-color: rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.65);
+}
+
+
+.register:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.title-screen h1{
+    color: rgb(0, 140, 255);
+    font-size: 4rem;
+}
+
+@media (max-width: 968px) and (max-height: 958px) {
+
+    .container{
+        flex-direction: column;
+    }
+    .title-screen{
+        height: 20dvh;
+    }
+    .login-container{
+        width: 100dvw;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+        
+    }
+}
+  
