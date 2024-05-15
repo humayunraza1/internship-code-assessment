@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100dvh;
+    width: 100dvw;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+}
+
+.title-screen{
+    height: 100dvh;
+    width: 50%;
+}
+
+.login-container{
+    background-color: bisque;
+    border-top-left-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom-left-radius: 40px;
+    height: 100dvh;
+    width: 50%;
+}
+
+.login-box{
+    height: 500px;
+    width: 400px;
+    border-radius: 50px;
+    background-color: azure;
+}
+
+.login-box .top-section{
+    padding: 20px;
+    text-align: center;
+}
