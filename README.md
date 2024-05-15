@@ -1,6 +1,3 @@
-Certainly! Below is a sample README.md for your internship assessment project:
-
----
 
 # Internship Assessment: Fakebook
 
