@@ -26,8 +26,6 @@ Fakebook
    
 4. You can also open the project in your preferred code editor to view and modify the HTML and CSS files.
 
-## Screenshots (Optional)
-Include screenshots of the login/register page here if needed.
+## Screenshot
+![Login Page](https://i.imgur.com/LPR6Z07.png)
 
-## License
-This project is licensed under the [MIT License](LICENSE).
